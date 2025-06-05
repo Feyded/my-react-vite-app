@@ -1,0 +1,7 @@
+name: my-react-vite-app
+
+services:
+  app:
+  image: dean18/my-react-vite-app
+    ports:
+      - '8000:80'
