@@ -11,7 +11,7 @@ import { useSampleStore } from '../_stores/use-sample-store';
 export const addSampleSchema = z.object({
   email: z.string().email().toLowerCase(),
   name: z.string().min(1, { message: 'Name is required' }),
-  description: z.string().min(1, { message: 'Descriptions is required' }),
+  description: z.string().min(1, { message: 'Description is required' }),
 });
 
 export type AddSample = z.infer<typeof addSampleSchema>;
